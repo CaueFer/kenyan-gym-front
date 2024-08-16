@@ -2,32 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "Kenyan";
+  src: url("/fonts/kenyan/kenyan coffee bd.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "Kenyan";
+  src: url("/fonts/kenyan/kenyan coffee bd it.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
 }
 
+@font-face {
+  font-family: "Kenyan";
+  src: url("/fonts/kenyan/kenyan coffee rg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kenyan";
+  src: url("/fonts/kenyan/kenyan coffee rg it.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  font-family: "Roboto", "Kenyan", sans-serif;
 }
