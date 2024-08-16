@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${roboto.className} flex flex-col items-center`}>
+      <body className={`${inter.className} ${roboto.className}`}>
         {children}
       </body>
     </html>

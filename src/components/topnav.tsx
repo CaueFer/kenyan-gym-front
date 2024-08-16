@@ -23,8 +23,8 @@ export default function TopNav() {
 
   return (
     <div
-      className={`w-full sticky top-0 transition-colors duration-500 backdrop-filter z-50
-        ${isScrolled ? "bg-black/75  backdrop-blur-sm " : "bg-transparent"}`}
+      className={`w-full fixed top-0 transition-colors duration-500 backdrop-filter z-50
+        ${isScrolled ? "bg-black/75  backdrop-blur-sm " : "bg-gradient-to-b from-black/70"}`}
     >
       <div className=" max-w-7xl w-full mx-auto flex justify-between items-center px-10 md:px-20 py-4 text-white">
         <h1 className="font-kenyan text-5xl">KENYAN</h1>
