@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useScroll, useTransform, motion, MotionValue } from "framer-motion";
 
 export const ContainerScroll = ({
@@ -34,13 +34,17 @@ export const ContainerScroll = ({
   const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
   const translate = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
+  useEffect(() => {
+    console.log("scrollYProgress:", scrollYProgress.get());
+  }, [scrollYProgress]);
+
   return (
     <div
-      className="h-[60rem] md:h-[80rem] flex items-center justify-center relative "
+      className="h-full hidden xl:flex items-start justify-center relative "
       ref={containerRef}
     >
       <div
-        className="py-10 w-full relative"
+        className="w-full relative"
         style={{
           perspective: "1000px",
         }}
@@ -56,12 +60,7 @@ export const ContainerScroll = ({
 
 export const Header = ({ translate, titleComponent }: any) => {
   return (
-    <motion.div
-      style={{
-        translateY: translate,
-      }}
-      className="div max-w-5xl mx-auto text-center"
-    >
+    <motion.div style={{}} className="div max-w-5xl mx-auto text-center">
       {titleComponent}
     </motion.div>
   );
@@ -83,9 +82,8 @@ export const Card = ({
         rotateX: rotate,
         scale,
       }}
-      className="-mt-12 mx-auto w-full"
+      className="mt-10 2xl:-mt-12 mx-auto w-full h-full"
     >
-      {" "}
       {children}
     </motion.div>
   );
