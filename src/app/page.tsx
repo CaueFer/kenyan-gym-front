@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import DefaultBtn from "@/components/defaultBtn";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -145,14 +146,14 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="min-w-full h-screen py-24 relative">
+        <section className="min-w-full h-auto pt-24 2xl:pt-44 relative overflow-x-clip">
           <ContainerScroll
             titleComponent={
               <>
                 <h1 className="text-4xl font-semibold text-black dark:text-white">
-                  Unleash the power of <br />
+                  Triunfe sobre o inimigo mais difícil <br />
                   <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                    Scroll Animations
+                    A SI PRÓPRIO
                   </span>
                 </h1>
               </>
@@ -168,7 +169,27 @@ export default function Home() {
             />
           </ContainerScroll>
         </section>
+
+        <section className="py-24 px-12 lg:px-24">
+          <div className="flex flex-col justify-center items-center gap-10">
+            <h1 className="text-8xl font-kenyan text-black">S0BRE NÓS</h1>
+            <h2 className="text-center text-xl max-w-3xl text-pretty">
+              Fundamos a academia em 2010 e, desde então, estamos com +70 franquias. Originalmente começamos como uma academia
+              exclusivamente de MMA, mas ao longo do tempo, evoluímos para um
+              centro de diversas artes marciais, com foco em MMA, BJJ e Muay
+              Thai. 
+              <br />
+              <br />
+              Sete dias por semana, nossa equipe e comunidade garantem uma
+              ampla variedade de atividades por meio de mais de 140 aulas. Nossa
+              área de fitness e as amplas áreas de tatame oferecem oportunidades
+              para treinos independentes de força e técnica ou sessões de
+              sparring com amigos.
+            </h2>
+          </div>
+        </section>
       </main>
+      <Footer/>
     </>
   );
 }
