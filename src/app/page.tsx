@@ -13,7 +13,7 @@ export default function Home() {
       <main className="flex min-w-screen flex-col items-center justify-between">
         <section
           id="heroSection"
-          className="min-w-full min-h-screen pt-[10vh] md:pt-[25vh] px-12 lg:px-24"
+          className="w-full min-h-screen pt-[10vh] md:pt-[25vh] px-12 lg:px-24"
         >
           {/* HERO BACKGROUND */}
           <div className="z-10 absolute inset-0 overflow-clip">
