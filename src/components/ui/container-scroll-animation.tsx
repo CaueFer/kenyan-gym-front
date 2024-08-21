@@ -34,13 +34,9 @@ export const ContainerScroll = ({
   const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
   const translate = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
-  useEffect(() => {
-    console.log("scrollYProgress:", scrollYProgress.get());
-  }, [scrollYProgress]);
-
   return (
     <div
-      className="h-full hidden xl:flex items-start justify-center relative "
+      className=" flex items-start justify-center relative h-full"
       ref={containerRef}
     >
       <div

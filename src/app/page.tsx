@@ -146,7 +146,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="min-w-full max-h-screen  min-h-[120vh] pt-24 2xl:pt-44 relative overflow-clip">
+        <section className="min-w-full pt-24 2xl:pt-44 relative overflow-clip hidden md:block">
           <ContainerScroll
             titleComponent={
               <>
@@ -160,7 +160,7 @@ export default function Home() {
             }
           >
             <Image
-              src={`/assets/imgs/inter-section.webp`}
+              src={`/assets/imgs/ightyourself.webp`}
               alt="hero"
               height={720}
               width={1400}
@@ -170,7 +170,26 @@ export default function Home() {
           </ContainerScroll>
         </section>
 
-        <section className="py-40 px-12 lg:px-24">
+        <section className="min-w-full pt-24 2xl:pt-44 relative overflow-clip block md:hidden">
+          <div className="flex flex-col justify-center items-center gap-6">
+            <h1 className="text-4xl font-semibold text-black text-center">
+              Triunfe sobre o inimigo mais difícil <br />
+              <span className="text-[4rem] font-bold mt-1 leading-none">
+                A SI PRÓPRIO
+              </span>
+            </h1>
+            <Image
+              src={`/assets/imgs/fightyourselfMini.jpg`}
+              alt="hero"
+              height={720}
+              width={1400}
+              className="mx-auto object-cover h-full w-full object-left-top"
+              draggable={false}
+            />
+          </div>
+        </section>
+
+        <section className="py-20 md:py-40 px-12 lg:px-24">
           <div className="flex flex-col justify-center items-center gap-14">
             <h1 className="text-8xl font-kenyan text-black">S0BRE NÓS</h1>
             <h2 className="text-center text-xl max-w-3xl text-pretty">
