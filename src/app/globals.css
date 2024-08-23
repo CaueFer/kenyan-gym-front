@@ -69,6 +69,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Kenyan";
   src: url("/fonts/kenyan/kenyan coffee bd.otf") format("opentype");

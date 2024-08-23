@@ -42,7 +42,7 @@ export const ContainerScroll = ({
       <div
         className="w-full relative"
         style={{
-          perspective: "1000px",
+          perspective: "2000px",
         }}
       >
         <Header translate={translate} titleComponent={titleComponent} />
