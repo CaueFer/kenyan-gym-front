@@ -1,11 +1,13 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 export default function TopNav() {
   const router = useRouter();
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -23,6 +25,10 @@ export default function TopNav() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    console.log(pathname);
+  }, [pathname]);
 
   return (
     <div
@@ -43,14 +49,34 @@ export default function TopNav() {
           KENYAN
         </a>
         <li className="flex gap-3 text-md font-bold">
-          <Link href={"/#classesSection"} scroll className="p-2">
-            AULAS
+          <Link
+            href={"/#classesSection"}
+            scroll
+            className={cn(
+              "p-2",
+              pathname === "/" ? "text-white" : "text-gray-300"
+            )}
+          >
+            Aulas
           </Link>
-          <Link href={"/#experimentalSection"} scroll className="p-2">
-            EXPERIMENTAL
+          <Link
+            href={"/#experimentalSection"}
+            scroll
+            className={cn(
+              "p-2",
+              pathname === "/" ? "text-white" : "text-gray-300"
+            )}
+          >
+            Experimental
           </Link>
-          <Link href={"/planos"} className="p-2">
-            PLANOS
+          <Link
+            href={"/planos"}
+            className={cn(
+              "p-2",
+              pathname === "/planos" ? "text-white" : "text-gray-300"
+            )}
+          >
+            Planos
           </Link>
         </li>
       </div>
