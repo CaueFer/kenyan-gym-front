@@ -1,9 +1,11 @@
-import React from "react";
+import React, { ReactHTMLElement } from "react";
 import CardsAula from "./cardsAula";
 
-export default function ClassesSection() {
+type ClassesSectionProps = React.HTMLProps<HTMLDivElement>;
+
+export default function ClassesSection({ id, ...props }: ClassesSectionProps) {
   return (
-    <section id="classesSection" className="py-24 px-12 lg:px-24">
+    <section id={id} className="py-24 px-12 lg:px-24">
       <div className="flex flex-col gap-6 justify-center items-center">
         <h1 className="text-8xl font-kenyan">AULAS</h1>
         <h2 className="max-w-[55%] text-balance text-center text-md">

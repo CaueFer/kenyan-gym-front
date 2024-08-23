@@ -1,15 +1,18 @@
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { ReactNode } from "react";
 
 type HeroSectionProps = {
   children: ReactNode
+  variant: string
+  id: string
 }
 
-export default function HeroSection({children}: HeroSectionProps) {
+export default function HeroSection({id, variant, children}: HeroSectionProps) {
   return (
     <section
-      id="heroSection"
-      className="w-full min-h-screen pt-[10vh] md:pt-[25vh] px-12 lg:px-24"
+      id={id}
+      className={cn("w-full py-[10vh] md:py-[25vh] px-12 lg:px-24 relative", variant === 'h-screen'? 'min-h-screen' : 'min-h-auto')}
     >
       {/* HERO BACKGROUND */}
       <div className="z-10 absolute inset-0 overflow-clip">

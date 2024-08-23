@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <TopNav />
       <main className="flex min-w-screen flex-col items-center justify-between">
-        <HeroSection>
+        <HeroSection id='heroSection' variant="h-screen">
           <div className="flex flex-col gap-[100px] md:gap-[50px] items-start z-20 text-white relative">
             <h1 className="font-kenyan leading-tight text-7xl md:text-8xl">
               ARTES MARCIAIS. <br />
@@ -29,12 +29,12 @@ export default function Home() {
                 você.
               </h2>
 
-              <DefaultBtn content="VER AULAS E TURMAS" width={"354px"} />
+              <DefaultBtn content="VER AULAS E TURMAS" width={"354px"}/>
             </div>
           </div>
         </HeroSection>
 
-        <ClassesSection />
+        <ClassesSection id="classesSection" />
 
         <ExperimentalClassesSection />
 
