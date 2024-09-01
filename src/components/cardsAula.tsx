@@ -10,21 +10,21 @@ export default function CardsAula() {
   const [aulas, setAulas] = useState(Constants.AULAS_INITIAL_VALUE);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-4 mx-auto max-w-3xl xl:max-w-5xl mt-10">
+    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-4 mx-auto max-w-3xl xl:max-w-5xl mt-10">
       {aulas.map((aula, index) => (
         <div
           role="listitem"
           key={index}
-          className="w-[370px] xl:max-w-[330px]  h-[500px] mx-auto overflow-clip group transition-all duration-500 relative"
+          className="w-full sm:w-[370px] xl:max-w-[330px] h-[500px] mx-auto overflow-clip group transition-all duration-500 relative"
         >
-          <div className=" w-full h-full scale-[1.1] group-hover:scale-[1] relative transition-all duration-300">
+          <div className="w-full h-full scale-[1.1] group-hover:scale-[1] relative transition-all duration-300">
             <Image
               alt={aulas[index]}
               className="transition-all duration-500"
               loading="lazy"
               src={`/assets/imgs/card-${aula.toLocaleLowerCase()}.webp`}
               sizes="100vw"
-              style={{ opacity: 1 }}
+              style={{ opacity: 1, objectFit: "cover" }}
               fill
             />
             <div className="absolute inset-0 flex flex-col justify-center items-center">

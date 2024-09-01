@@ -8,7 +8,7 @@ export default function ClassesSection({ id, ...props }: ClassesSectionProps) {
     <section id={id} className="py-24 px-12 lg:px-24">
       <div className="flex flex-col gap-6 justify-center items-center">
         <h1 className="text-8xl font-kenyan">AULAS</h1>
-        <h2 className="max-w-[55%] text-balance text-center text-md">
+        <h2 className="md:max-w-[55%] text-balance text-center text-md">
           Em mais de 1500 m², oferecemos um amplo espectro de artes marciais,
           fitness e recuperação. Você decide se é Artes Marciais Mistas, Muay
           Thai, Jiu-Jitsu Brasileiro, boxe ou luta livre, você encontrará tudo o

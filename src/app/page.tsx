@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <TopNav />
-      <main className="flex min-w-screen flex-col items-center justify-between">
+      <main className="flex min-w-screen flex-col items-center justify-between overflow-x-clip">
         <HeroSection id='heroSection' variant="h-screen">
           <div className="flex flex-col gap-[100px] md:gap-[50px] items-start z-20 text-white relative">
             <h1 className="font-kenyan leading-tight text-7xl md:text-8xl">

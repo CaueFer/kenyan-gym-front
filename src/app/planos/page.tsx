@@ -4,20 +4,18 @@ import HeroSection from "@/components/heroSection";
 import DefaultBtn from "@/components/defaultBtn";
 import CardsPlanos from "@/components/cardsPlanos";
 
-
-
 export default function Planos() {
   return (
     <>
       <TopNav />
       <main className="flex min-w-screen flex-col items-center justify-between">
-        <HeroSection id='planosHeroSection' variant="">
+        <HeroSection id="planosHeroSection" variant="">
           <div className="flex flex-col gap-[100px] md:gap-[50px] items-center z-20 text-white relative">
             <h1 className="font-kenyan leading-tight text-7xl md:text-8xl">
               PLANOS
             </h1>
             <div className="flex flex-col gap-14 max-w-[80%] justify-center items-center">
-              <h2 className="text-gray-200 text-xl text-balance text-center">
+              <h2 className="text-gray-200 text-xl text-pretty text-center">
                 Com opções acessíveis e flexíveis, garantimos que seu
                 investimento em saúde e bem-estar vale a pena. Escolha seu
                 plano, aproveite nossas instalações de primeira classe, e conte
@@ -31,8 +29,10 @@ export default function Planos() {
 
         <section id="planosSection" className="py-24 px-12 lg:px-24">
           <div className="flex flex-col gap-6 justify-center items-center">
-            <h1 className="text-8xl font-kenyan">MENSALIDADES</h1>
-            <h2 className="max-w-[55%] text-center text-xl text-pretty">
+            <h1 className="text-7xl md:text-8xl font-kenyan">
+              MENSALIDADES
+            </h1>
+            <h2 className="md:max-w-[55%] text-center text-xl text-pretty">
               Para todos com 16 anos ou mais.
               <br />
               <br />

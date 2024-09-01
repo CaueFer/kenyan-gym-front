@@ -23,7 +23,7 @@ export default function DefaultBtn({ content, width }: DefaultBtnProps) {
   return (
     <button
       className={`relative inline-flex overflow-hidden p-[1px] focus:outline-none `}
-      style={{ width: width }}
+      style={{ maxWidth: width }}
       onClick={() => {
         scrollToSection("classesSection");
       }}

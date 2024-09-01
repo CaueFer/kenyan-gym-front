@@ -33,7 +33,7 @@ export default function Footer() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ amount: 0.5 }}
             variants={imageVariants}
             style={{ transformOrigin: "left" }}
             className="absolute left-1/2 -translate-x-1/2 top-[0px] h-[25px] w-[105px]"
@@ -52,7 +52,7 @@ export default function Footer() {
           <h1 className="font-kenyan text-6xl z-20 relative">KENYAN</h1>
         </div>
 
-        <div className="w-full flex flex-row gap-2 justify-around items-start">
+        <div className="w-full flex flex-col sm:flex-row gap-6 text-center sm:text-start sm:gap-2 justify-around items-center sm:items-start">
           <div className="flex flex-col gap-1">
             <span className="font-bold uppercase">ENDEREÇO</span>
             <p className="">
