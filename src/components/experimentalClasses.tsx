@@ -48,7 +48,7 @@ export default function ExperimentalClassesSection() {
             custom={{ index: 0, opacity: 0.3 }}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ amount: 0.5 }}
             variants={imageVariants}
             className="absolute top-[55px] right-[100px] mask-rounded-xl"
           >
@@ -65,7 +65,7 @@ export default function ExperimentalClassesSection() {
             custom={{ index: 1, opacity: 0.6 }}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ amount: 0.5 }}
             variants={imageVariants}
             className="absolute top-[55px] right-[75px] mask-rounded-xl"
           >
@@ -82,7 +82,7 @@ export default function ExperimentalClassesSection() {
             custom={{ index: 2, opacity: 1 }}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ amount: 0.5 }}
             variants={imageVariants}
             className="absolute top-[55px] right-[50px] mask-rounded-xl"
           >
